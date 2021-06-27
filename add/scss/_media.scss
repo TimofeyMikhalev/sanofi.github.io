@@ -1,0 +1,1589 @@
+// font-family: 'IBM Plex Sans', sans-serif;
+// font-family: 'IBM Plex Serif', serif;
+
+@function get-vw($fontSize, $vw-viewport) {
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $fontSize / $vw-context * 1vw;
+    @return $fontSize;
+}
+
+@media screen and (max-width: 850px) {
+    [data-id="sanofi-1232"] {
+       
+        overflow-x: hidden;
+       
+        .wrapper {
+     
+            background-color: #2b66e7;
+            
+            .header {
+                display: flex;
+                justify-content: center;
+                background-color: #2b66e7;
+                .container__header {
+                    width: 92%;
+                    justify-content: flex-start;
+                    display: flex;
+                    z-index: 1;
+                }
+                &__inner {
+                    width: get-vw(290px, 320);
+                }
+                &__inner p {
+                    font-family: "IBM Plex Serif", serif;
+                    font-weight: 400;
+                    font-size: get-vw(18px, 320);
+                    line-height: 1.3;
+                    color: #fff;
+                    padding-bottom: get-vw(48px, 320);
+                }
+                &__inner span {
+                    font-family: "IBM Plex Serif", serif;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: get-vw(18px, 320);
+                    line-height: 1.3;
+                    color: #fff;
+                }
+            }
+
+            .circle1 {
+                width: get-vw(240px, 320);
+                position: absolute;
+
+                top: get-vw(500px, 320);
+                left: get-vw(170px, 320);
+                z-index: 0;
+                animation: cell 15s infinite linear;
+                mix-blend-mode: color-burn;
+                @keyframes cell {
+                    from {
+                        transform: translate3d(-30px, 30px, 5px);
+                    }
+
+                    25% {
+                        transform: translate3d(-60px, 60px, 15px);
+                    }
+                    50% {
+                        transform: translate3d(-100px, 90px, 25px);
+                    }
+                    75% {
+                        transform: translate3d(-60px, 60px, 15px);
+                    }
+                    to {
+                        transform: translate3d(-30px, 30px, 5px);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+            .circle2 {
+                width: get-vw(165px, 320);
+                position: absolute;
+
+                top: get-vw(1500px, 320);
+                left: get-vw(170px, 320);
+               
+                z-index: 0;
+                animation: sell 15s infinite linear;
+                mix-blend-mode: difference;
+                @keyframes sell {
+                    from {
+                        transform: translate3d(-5px, -50px, 5px);
+                    }
+                    25% {
+                        transform: translate3d(-6px, -130px, 55px);
+                    }
+                    50% {
+                        transform: translate3d(-7px, -260px, 55px);
+                    }
+                    75% {
+                        transform: translate3d(-6px, -130px, 55px);
+                    }
+                    to {
+                        transform: translate3d(-5px, -50px, 5px);
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .circle3 {
+                width: get-vw(200px, 320);
+                position: absolute;
+
+                top: get-vw(1400px, 320);
+                left: get-vw(-100px, 320);
+                z-index: 0;
+                animation: pill 15s infinite linear;
+                mix-blend-mode: difference;
+                @keyframes pill {
+                    from {
+                        transform: translate3d(25px, 10px, 5px);
+                    }
+                    25% {
+                        transform: translate3d(50px, 30px, 5px);
+                    }
+                    50% {
+                        transform: translate3d(100px, 60px, 5px);
+                    }
+                    75% {
+                        transform: translate3d(50px, 30px, 5px);
+                    }
+                    to {
+                        transform: translate3d(25px, 10px, 5px);
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                width: 100%;
+                // height: 0;
+
+                position: relative;
+
+                .content__wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    width: 100%;
+                    .container__blue {
+                        position: absolute;
+                        top: get-vw(-30px, 320);
+                        left: get-vw(-30px, 320);
+                        width: 100%;
+                        height: 100%;
+                        background-color: #3f7de2;
+
+                        border-radius: get-vw(24px, 320);
+                    }
+
+                    .test {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: get-vw(50px, 320);
+
+                        .test__container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            position: relative;
+                            width: get-vw(290px, 320);
+
+                            .container__questions {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                position: relative;
+
+                                width: 100%;
+
+                                will-change: transform;
+                                transition: transform 1s;
+                                border-radius: get-vw(24px, 320);
+
+                                background-color: #fff;
+                            }
+                            .container__white {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                                // margin-top: get-vw(30px, 320);
+                                // margin-left: get-vw(30px, 320);
+
+                                justify-content: center;
+                                align-items: center;
+
+                                border: get-vw(2px, 320) solid #0e55c8;
+                                border-radius: get-vw(24px, 320);
+
+                                transition: 0.5s opacity;
+                                .white__inner {
+                                    display: block;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+
+                                    background: #fff;
+
+                                    // border: get-vw(2px, 320) solid #0e55c8;
+                                    border-radius: get-vw(24px, 320);
+                                    .inner__number {
+                                        width: get-vw(45px, 320);
+                                        height: get-vw(45px, 320);
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        border-radius: 50%;
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-size: get-vw(22px, 320);
+                                        margin-top: get-vw(24px, 320);
+                                        margin-right: get-vw(24px, 320);
+                                        text-align: center;
+
+                                        color: #ffffff;
+                                        background: #3f7de2;
+                                    }
+                                    .inner__ul {
+                                        width: get-vw(247px, 320);
+                                        .ul__title {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-size: get-vw(20px, 320);
+                                            line-height: 1.1;
+
+                                            margin-bottom: get-vw(17px, 320);
+                                            margin-top: get-vw(10px, 320);
+
+                                            color: #000000;
+                                        }
+                                        .test_mobile {
+                                            // width: get-vw(276px, 1440);
+                                            height: auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-direction: column;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                        .inner__ul_list {
+                                            list-style-type: none;
+                                            margin-left: 0;
+                                            padding-left: 0;
+                                            .list__li {
+                                                font-family: "IBM Plex Sans", sans-serif;
+                                                font-size: get-vw(18px, 320);
+                                                line-height: 1.2;
+                                                margin-bottom: get-vw(19px, 320);
+                                                color: #000000;
+                                                padding-left: get-vw(40px, 320);
+                                                position: relative;
+                                                cursor: pointer;
+                                                margin-top: get-vw(40px, 320);
+                                                &:nth-last-child(1) {
+                                                    margin-bottom: get-vw(15px, 320);
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: get-vw(22px, 320);
+                                                    height: get-vw(22px, 320);
+                                                    border-radius: 50%;
+                                                    border: get-vw(2px, 320) solid #0e55c8;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover::before {
+                                                    background-color: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.correct {
+                                                &::before {
+                                                    border: 2px solid #0e55c8;
+                                                    background: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.incorrect {
+                                                &::before {
+                                                    border: 2px solid #ff0000;
+                                                    background: #ff6060;
+                                                }
+                                            }
+                                        }
+
+                                        &.showAnswer {
+                                            .answer {
+                                                margin-top: get-vw(35px, 320);
+                                                height: get-vw(206px, 320);
+                                            }
+                                            .answer2 {
+                                                margin-top: get-vw(55px, 320);
+                                                height: get-vw(360px, 320);
+                                            }
+                                            .answer3 {
+                                                margin-top: get-vw(55px, 320);
+                                                height: get-vw(534px, 320);
+                                            }
+                                            .answer4 {
+                                                margin-top: get-vw(55px, 320);
+                                                height: get-vw(315px, 320);
+                                            }
+                                            .answer5 {
+                                                margin-top: get-vw(55px, 320);
+                                                height: get-vw(534px, 320);
+                                            }
+                                            .inner__ul_list {
+                                                //не кэикаэись
+                                                pointer-events: none;
+                                            }
+                                            .li__button {
+                                                display: block;
+                                            }
+                                        }
+                                        &.showAnswer_end {
+                                            .answer {
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                            .answer2{
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                            .answer3{
+                                                height: auto;
+                                                overflow: visible;
+
+                                            }
+                                            .answer4{
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                            .answer5{
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                        }
+                                        .answer,
+                                        .answer2,
+                                        .answer3,
+                                        .answer4,
+                                        .answer5 {
+                                            background: #ffffff;
+                                            width: 100%;
+                                            height: 0;
+                                            overflow: hidden;
+
+                                            border-radius: get-vw(24px, 320);
+                                            
+                                            will-change: height;
+                                            transition: 1s height;
+                                            margin-top: get-vw(30px, 320);
+                                            .answer__container {
+                                                display: flex;
+                                                justify-content: center;
+
+                                                flex-direction: column;
+                                                border: get-vw(2px, 320) solid #0e55c8;
+                                                border-radius: get-vw(24px, 320);
+
+                                                .star__img {
+                                                    margin-top: get-vw(12px, 320);
+                                                    margin-left: get-vw(18px, 320);
+                                                }
+                                                .container__text {
+                                                    font-family: "IBM Plex Sans", sans-serif;
+                                                    font-style: italic;
+                                                    font-weight: 400;
+                                                    font-size: get-vw(18px, 320);
+                                                    line-height: 1.2;
+
+                                                    padding: get-vw(1px, 320) get-vw(12px, 320) get-vw(35px, 320)
+                                                        get-vw(22px, 320);
+                                                    color: #000000;
+                                                    position: relative;
+                                                }
+                                            }
+                                        }
+
+                                        .correct {
+                                        }
+                                        .incorrect {
+                                        }
+                                        .button__white {
+                                            display: flex;
+                                            justify-content: center;
+                                            margin-top: get-vw(50px, 320);
+                                        }
+                                        .li__button {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: get-vw(20px, 320);
+                                            line-height: 1.1;
+                                            text-align: center;
+                                            background-color: #ff837c;;
+                                            color: #ffffff;
+                                            border-radius: get-vw(30px, 320);
+                                            border: none;
+                                            cursor: pointer;
+                                            padding: get-vw(10px, 320) get-vw(25px, 320) get-vw(10px, 320)
+                                                get-vw(25px, 320);
+                                            margin-bottom: get-vw(52px, 320);
+                                            transition: all 0.4s;
+                                            display: none;
+                                            &:hover {
+                                                background-color: #ffca77;
+                                            }
+                                        }
+                                    }
+
+                                    .inner__images {
+                                        width: get-vw(254px, 320);
+                                        margin-top: get-vw(17px, 320);
+                                        display: none;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .test2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: get-vw(110px, 320);
+
+                        .test__container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            position: relative;
+                            width: get-vw(1260px, 320);
+                            .container__blue {
+                                position: absolute;
+                                top: get-vw(-30px, 320);
+                                left: get-vw(-30px, 320);
+                                width: 100%;
+                                height: 100%;
+                                background-color: #3f7de2;
+
+                                border-radius: get-vw(24px, 320);
+                            }
+                            .container__white {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                                margin-top: get-vw(30px, 320);
+                                margin-left: get-vw(30px, 320);
+
+                                justify-content: center;
+                                align-items: center;
+                                .white__inner {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+
+                                    background: #fff;
+
+                                    border: get-vw(2px, 320) solid #0e55c8;
+                                    border-radius: get-vw(24px, 320);
+                                    .inner__number {
+                                        width: get-vw(78px, 320);
+                                        height: get-vw(78px, 320);
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        border-radius: 50%;
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-size: get-vw(34px, 320);
+                                        margin-top: get-vw(56px, 320);
+                                        text-align: center;
+
+                                        color: #ffffff;
+                                        background: #3f7de2;
+                                    }
+                                    .inner__ul {
+                                        width: get-vw(503px, 320);
+                                        .ul__title {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-size: get-vw(34px, 320);
+                                            line-height: 1.1;
+
+                                            margin-bottom: get-vw(58px, 320);
+                                            margin-top: get-vw(73px, 320);
+
+                                            color: #000000;
+                                        }
+                                        .inner__ul_list {
+                                            list-style-type: none;
+                                            margin-left: 0;
+                                            padding-left: 0;
+                                            .list__li {
+                                                font-family: "IBM Plex Sans", sans-serif;
+                                                font-size: get-vw(24px, 320);
+                                                line-height: 1.2;
+                                                margin-bottom: get-vw(31px, 320);
+                                                color: #000000;
+                                                padding-left: get-vw(56px, 320);
+                                                position: relative;
+                                                cursor: pointer;
+                                                margin-top: get-vw(40px, 320);
+                                                &:nth-last-child(1) {
+                                                    // margin-bottom: get-vw(65px, 320);
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: get-vw(27px, 320);
+                                                    height: get-vw(27px, 320);
+                                                    border-radius: 50%;
+                                                    border: get-vw(2px, 320) solid #0e55c8;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover::before {
+                                                    background-color: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.correct {
+                                                &::before {
+                                                    border: 2px solid #0e55c8;
+                                                    background: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.incorrect {
+                                                &::before {
+                                                    border: 2px solid #ff0000;
+                                                    background: #ff6060;
+                                                }
+                                            }
+                                        }
+
+                                        &.showAnswer {
+                                            .answer {
+                                                height: 150px;
+                                            }
+                                            .inner__ul_list {
+                                                //не кэикаэись
+                                                pointer-events: none;
+                                            }
+                                        }
+                                        &.showAnswer_end {
+                                            .answer {
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                        }
+                                        .answer {
+                                            background: #ffffff;
+                                            width: 100%;
+                                            height: 0;
+                                            overflow: hidden;
+
+                                            border-radius: get-vw(24px, 320);
+                                            margin-bottom: get-vw(54px, 320);
+
+                                            will-change: height;
+                                            transition: 1s height;
+                                            .answer__container {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-direction: column;
+                                                border: get-vw(2px, 320) solid #0e55c8;
+                                                border-radius: get-vw(24px, 320);
+
+                                                .container__text {
+                                                    font-family: "IBM Plex Sans", sans-serif;
+                                                    font-style: italic;
+                                                    font-weight: 400;
+                                                    font-size: get-vw(18px, 320);
+                                                    line-height: 1.2;
+
+                                                    padding: get-vw(35px, 320) get-vw(35px, 320) get-vw(28px, 320)
+                                                        get-vw(83px, 320);
+                                                    color: #000000;
+                                                    position: relative;
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url(../images/star.svg);
+                                                        width: get-vw(28px, 320);
+                                                        height: get-vw(28px, 320);
+                                                        position: absolute;
+                                                        left: get-vw(30px, 320);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .correct {
+                                        }
+                                        .incorrect {
+                                        }
+
+                                        .li__button {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: get-vw(24px, 320);
+                                            line-height: 1.1;
+                                            text-align: center;
+                                            background-color: #3f7de2;
+                                            color: #ffffff;
+                                            border-radius: get-vw(30px, 320);
+                                            border: none;
+                                            cursor: pointer;
+                                            padding: get-vw(10px, 320) get-vw(40px, 320) get-vw(17px, 320)
+                                                get-vw(40px, 320);
+                                            margin-bottom: get-vw(89px, 320);
+                                            transition: all 0.4s;
+                                            &:hover {
+                                                background-color: #ffca77;
+                                            }
+                                        }
+                                    }
+
+                                    .inner__images {
+                                        width: get-vw(510px, 320);
+                                        margin-top: get-vw(25px, 320);
+                                        animation: move 5s infinite linear;
+
+                                        @keyframes move {
+                                            to {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                            50% {
+                                                transform: translate3d(-3px, -2px, -1px);
+                                            }
+                                            from {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .test3 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: get-vw(110px, 320);
+
+                        .test__container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            position: relative;
+                            width: get-vw(1260px, 320);
+                            .container__blue {
+                                position: absolute;
+                                top: get-vw(-30px, 320);
+                                left: get-vw(-30px, 320);
+                                width: 100%;
+                                height: 100%;
+                                background-color: #3f7de2;
+
+                                border-radius: get-vw(24px, 320);
+                            }
+                            .container__white {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                                margin-top: get-vw(30px, 320);
+                                margin-left: get-vw(30px, 320);
+
+                                justify-content: center;
+                                align-items: center;
+                                .white__inner {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+
+                                    background: #fff;
+
+                                    border: get-vw(2px, 320) solid #0e55c8;
+                                    border-radius: get-vw(24px, 320);
+                                    .inner__number {
+                                        width: get-vw(78px, 320);
+                                        height: get-vw(78px, 320);
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        border-radius: 50%;
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-size: get-vw(34px, 320);
+                                        margin-top: get-vw(56px, 320);
+                                        text-align: center;
+
+                                        color: #ffffff;
+                                        background: #3f7de2;
+                                    }
+                                    .inner__ul {
+                                        width: get-vw(503px, 320);
+                                        .ul__title {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-size: get-vw(34px, 320);
+                                            line-height: 1.1;
+
+                                            margin-bottom: get-vw(58px, 320);
+                                            margin-top: get-vw(73px, 320);
+
+                                            color: #000000;
+                                        }
+                                        .inner__ul_list {
+                                            list-style-type: none;
+                                            margin-left: 0;
+                                            padding-left: 0;
+                                            .list__li {
+                                                font-family: "IBM Plex Sans", sans-serif;
+                                                font-size: get-vw(24px, 320);
+                                                line-height: 1.2;
+                                                margin-bottom: get-vw(31px, 320);
+                                                color: #000000;
+                                                padding-left: get-vw(56px, 320);
+                                                position: relative;
+                                                cursor: pointer;
+                                                margin-top: get-vw(40px, 320);
+                                                &:nth-last-child(1) {
+                                                    
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: get-vw(27px, 320);
+                                                    height: get-vw(27px, 320);
+                                                    border-radius: 50%;
+                                                    border: get-vw(2px, 320) solid #0e55c8;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover::before {
+                                                    background-color: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.correct {
+                                                &::before {
+                                                    border: 2px solid #0e55c8;
+                                                    background: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.incorrect {
+                                                &::before {
+                                                    border: 2px solid #ff0000;
+                                                    background: #ff6060;
+                                                }
+                                            }
+                                        }
+
+                                        &.showAnswer {
+                                            .answer {
+                                                height: 150px;
+                                            }
+                                            .inner__ul_list {
+                                                //не кэикаэись
+                                                pointer-events: none;
+                                            }
+                                        }
+                                        &.showAnswer_end {
+                                            .answer {
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                        }
+                                        .answer {
+                                            background: #ffffff;
+                                            width: 100%;
+                                            height: 0;
+                                            overflow: hidden;
+
+                                            border-radius: get-vw(24px, 320);
+                                            margin-bottom: get-vw(54px, 320);
+
+                                            will-change: height;
+                                            transition: 1s height;
+                                            .answer__container {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-direction: column;
+                                                border: get-vw(2px, 320) solid #0e55c8;
+                                                border-radius: get-vw(24px, 320);
+
+                                                .container__text {
+                                                    font-family: "IBM Plex Sans", sans-serif;
+                                                    font-style: italic;
+                                                    font-weight: 400;
+                                                    font-size: get-vw(18px, 320);
+                                                    line-height: 1.2;
+
+                                                    padding: get-vw(35px, 320) get-vw(35px, 320) get-vw(28px, 320)
+                                                        get-vw(83px, 320);
+                                                    color: #000000;
+                                                    position: relative;
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url(../images/star.svg);
+                                                        width: get-vw(28px, 320);
+                                                        height: get-vw(28px, 320);
+                                                        position: absolute;
+                                                        left: get-vw(30px, 320);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .correct {
+                                        }
+                                        .incorrect {
+                                        }
+
+                                        .li__button {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: get-vw(24px, 320);
+                                            line-height: 1.1;
+                                            text-align: center;
+                                            background-color: #3f7de2;
+                                            color: #ffffff;
+                                            border-radius: get-vw(30px, 320);
+                                            border: none;
+                                            cursor: pointer;
+                                            padding: get-vw(10px, 320) get-vw(40px, 320) get-vw(17px, 320)
+                                                get-vw(40px, 320);
+                                            margin-bottom: get-vw(89px, 320);
+                                            transition: all 0.4s;
+                                            &:hover {
+                                                background-color: #ffca77;
+                                            }
+                                        }
+                                    }
+
+                                    .inner__images {
+                                        width: get-vw(510px, 320);
+                                        margin-top: get-vw(25px, 320);
+                                        animation: move 5s infinite linear;
+
+                                        @keyframes move {
+                                            to {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                            50% {
+                                                transform: translate3d(-3px, -2px, -1px);
+                                            }
+                                            from {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .test4 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: get-vw(110px, 320);
+
+                        .test__container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            position: relative;
+                            width: get-vw(1260px, 320);
+                            .container__blue {
+                                position: absolute;
+                                top: get-vw(-30px, 320);
+                                left: get-vw(-30px, 320);
+                                width: 100%;
+                                height: 100%;
+                                background-color: #3f7de2;
+
+                                border-radius: get-vw(24px, 320);
+                            }
+                            .container__white {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                                margin-top: get-vw(30px, 320);
+                                margin-left: get-vw(30px, 320);
+
+                                justify-content: center;
+                                align-items: center;
+                                .white__inner {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+
+                                    background: #fff;
+
+                                    border: get-vw(2px, 320) solid #0e55c8;
+                                    border-radius: get-vw(24px, 320);
+                                    .inner__number {
+                                        width: get-vw(78px, 320);
+                                        height: get-vw(78px, 320);
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        border-radius: 50%;
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-size: get-vw(34px, 320);
+                                        margin-top: get-vw(56px, 320);
+                                        text-align: center;
+
+                                        color: #ffffff;
+                                        background: #3f7de2;
+                                    }
+                                    .inner__ul {
+                                        width: get-vw(503px, 320);
+                                        .ul__title {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-size: get-vw(34px, 320);
+                                            line-height: 1.1;
+
+                                            margin-bottom: get-vw(58px, 320);
+                                            margin-top: get-vw(73px, 320);
+
+                                            color: #000000;
+                                        }
+                                        .inner__ul_list {
+                                            list-style-type: none;
+                                            margin-left: 0;
+                                            padding-left: 0;
+                                            .list__li {
+                                                font-family: "IBM Plex Sans", sans-serif;
+                                                font-size: get-vw(24px, 320);
+                                                line-height: 1.2;
+                                                margin-bottom: get-vw(31px, 320);
+                                                color: #000000;
+                                                padding-left: get-vw(56px, 320);
+                                                position: relative;
+                                                cursor: pointer;
+                                                margin-top: get-vw(40px, 320);
+                                                &:nth-last-child(1) {
+                                                   
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: get-vw(27px, 320);
+                                                    height: get-vw(27px, 320);
+                                                    border-radius: 50%;
+                                                    border: get-vw(2px, 320) solid #0e55c8;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover::before {
+                                                    background-color: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.correct {
+                                                &::before {
+                                                    border: 2px solid #0e55c8;
+                                                    background: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.incorrect {
+                                                &::before {
+                                                    border: 2px solid #ff0000;
+                                                    background: #ff6060;
+                                                }
+                                            }
+                                        }
+
+                                        &.showAnswer {
+                                            .answer {
+                                                height: 150px;
+                                            }
+                                            .inner__ul_list {
+                                                //не кэикаэись
+                                                pointer-events: none;
+                                            }
+                                        }
+                                        &.showAnswer_end {
+                                            .answer {
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                        }
+                                        .answer {
+                                            background: #ffffff;
+                                            width: 100%;
+                                            height: 0;
+                                            overflow: hidden;
+
+                                            border-radius: get-vw(24px, 320);
+                                            margin-bottom: get-vw(54px, 320);
+
+                                            will-change: height;
+                                            transition: 1s height;
+                                            .answer__container {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-direction: column;
+                                                border: get-vw(2px, 320) solid #0e55c8;
+                                                border-radius: get-vw(24px, 320);
+
+                                                .container__text {
+                                                    font-family: "IBM Plex Sans", sans-serif;
+                                                    font-style: italic;
+                                                    font-weight: 400;
+                                                    font-size: get-vw(18px, 320);
+                                                    line-height: 1.2;
+
+                                                    padding: get-vw(35px, 320) get-vw(35px, 320) get-vw(28px, 320)
+                                                        get-vw(83px, 320);
+                                                    color: #000000;
+                                                    position: relative;
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url(../images/star.svg);
+                                                        width: get-vw(28px, 320);
+                                                        height: get-vw(28px, 320);
+                                                        position: absolute;
+                                                        left: get-vw(30px, 320);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .correct {
+                                        }
+                                        .incorrect {
+                                        }
+
+                                        .li__button {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: get-vw(24px, 320);
+                                            line-height: 1.1;
+                                            text-align: center;
+                                            background-color: #3f7de2;
+                                            color: #ffffff;
+                                            border-radius: get-vw(30px, 320);
+                                            border: none;
+                                            cursor: pointer;
+                                            padding: get-vw(10px, 320) get-vw(40px, 320) get-vw(17px, 320)
+                                                get-vw(40px, 320);
+                                            margin-bottom: get-vw(89px, 320);
+                                            transition: all 0.4s;
+                                            &:hover {
+                                                background-color: #ffca77;
+                                            }
+                                        }
+                                    }
+
+                                    .inner__images {
+                                        width: get-vw(510px, 320);
+                                        margin-top: get-vw(25px, 320);
+                                        animation: move 5s infinite linear;
+
+                                        @keyframes move {
+                                            to {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                            50% {
+                                                transform: translate3d(-3px, -2px, -1px);
+                                            }
+                                            from {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .test5 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: get-vw(110px, 320);
+
+                        .test__container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            position: relative;
+                            width: get-vw(1260px, 320);
+                            .container__blue {
+                                position: absolute;
+                                top: get-vw(-30px, 320);
+                                left: get-vw(-30px, 320);
+                                width: 100%;
+                                height: 100%;
+                                background-color: #3f7de2;
+
+                                border-radius: get-vw(24px, 320);
+                            }
+                            .container__white {
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                                margin-top: get-vw(30px, 320);
+                                margin-left: get-vw(30px, 320);
+
+                                justify-content: center;
+                                align-items: center;
+                                .white__inner {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+
+                                    background: #fff;
+
+                                    border: get-vw(2px, 320) solid #0e55c8;
+                                    border-radius: get-vw(24px, 320);
+                                    .inner__number {
+                                        width: get-vw(78px, 320);
+                                        height: get-vw(78px, 320);
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        border-radius: 50%;
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-size: get-vw(34px, 320);
+                                        margin-top: get-vw(56px, 320);
+                                        text-align: center;
+
+                                        color: #ffffff;
+                                        background: #3f7de2;
+                                    }
+                                    .inner__ul {
+                                        width: get-vw(503px, 320);
+                                        .ul__title {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-size: get-vw(34px, 320);
+                                            line-height: 1.1;
+
+                                            margin-bottom: get-vw(58px, 320);
+                                            margin-top: get-vw(73px, 320);
+
+                                            color: #000000;
+                                            span{
+                                                font-weight: 700;
+                                            }
+                                        }
+                                        .inner__ul_list {
+                                            list-style-type: none;
+                                            margin-left: 0;
+                                            padding-left: 0;
+                                            .list__li {
+                                                font-family: "IBM Plex Sans", sans-serif;
+                                                font-size: get-vw(24px, 320);
+                                                line-height: 1.2;
+                                                margin-bottom: get-vw(31px, 320);
+                                                color: #000000;
+                                                padding-left: get-vw(56px, 320);
+                                                position: relative;
+                                                cursor: pointer;
+                                                margin-top: get-vw(40px, 320);
+                                                &:nth-last-child(1) {
+                                                   
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    width: get-vw(27px, 320);
+                                                    height: get-vw(27px, 320);
+                                                    border-radius: 50%;
+                                                    border: get-vw(2px, 320) solid #0e55c8;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    transition: all 0.4s;
+                                                }
+                                                &:hover::before {
+                                                    background-color: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.correct {
+                                                &::before {
+                                                    border: 2px solid #0e55c8;
+                                                    background: #3f7de2;
+                                                }
+                                            }
+                                            .list__li.incorrect {
+                                                &::before {
+                                                    border: 2px solid #ff0000;
+                                                    background: #ff6060;
+                                                }
+                                            }
+                                        }
+
+                                        &.showAnswer {
+                                            .answer {
+                                                height: 150px;
+                                            }
+                                            .inner__ul_list {
+                                                //не кэикаэись
+                                                pointer-events: none;
+                                            }
+                                        }
+                                        &.showAnswer_end {
+                                            .answer {
+                                                height: auto;
+                                                overflow: visible;
+                                            }
+                                        }
+                                        .answer {
+                                            background: #ffffff;
+                                            width: 100%;
+                                            height: 0;
+                                            overflow: hidden;
+
+                                            border-radius: get-vw(24px, 320);
+                                            margin-bottom: get-vw(54px, 320);
+
+                                            will-change: height;
+                                            transition: 1s height;
+                                            .answer__container {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-direction: column;
+                                                border: get-vw(2px, 320) solid #0e55c8;
+                                                border-radius: get-vw(24px, 320);
+
+                                                .container__text {
+                                                    font-family: "IBM Plex Sans", sans-serif;
+                                                    font-style: italic;
+                                                    font-weight: 400;
+                                                    font-size: get-vw(18px, 320);
+                                                    line-height: 1.2;
+
+                                                    padding: get-vw(35px, 320) get-vw(35px, 320) get-vw(35px, 320)
+                                                        get-vw(83px, 320);
+                                                    color: #000000;
+                                                    position: relative;
+                                                    &::before {
+                                                        content: "";
+                                                        background-image: url(../images/star.svg);
+                                                        width: get-vw(28px, 320);
+                                                        height: get-vw(28px, 320);
+                                                        position: absolute;
+                                                        left: get-vw(30px, 320);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .correct {
+                                        }
+                                        .incorrect {
+                                        }
+
+                                        .li__button {
+                                            font-family: "IBM Plex Sans", sans-serif;
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            font-size: get-vw(24px, 320);
+                                            line-height: 1.1;
+                                            text-align: center;
+                                            background-color: #3f7de2;
+                                            color: #ffffff;
+                                            border-radius: get-vw(30px, 320);
+                                            border: none;
+                                            cursor: pointer;
+                                            padding: get-vw(10px, 320) get-vw(40px, 320) get-vw(17px, 320)
+                                                get-vw(40px, 320);
+                                            margin-bottom: get-vw(89px, 320);
+                                            transition: all 0.4s;
+                                            &:hover {
+                                                background-color: #ffca77;
+                                            }
+                                        }
+                                    }
+
+                                    .inner__images {
+                                        width: get-vw(510px, 320);
+                                        margin-top: get-vw(25px, 320);
+                                        animation: move 5s infinite linear;
+
+                                        @keyframes move {
+                                            to {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                            50% {
+                                                transform: translate3d(-3px, -2px, -1px);
+                                            }
+                                            from {
+                                                transform: translate3d(4px, 2px, 2px);
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .content.transition {
+                .container__questions {
+                    // transform: translate3d(get-vw(-30px, 320), get-vw(-30px, 320), 0);
+
+                    .container__white {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .content[data-question="0"] {
+                .container__white_1 {
+                    display: flex;
+                }
+                .container__white:not(.container__white_1) {
+                    display: none;
+                }
+            }
+
+            .content[data-question="1"] {
+                .container__white_2 {
+                    display: flex;
+                }
+                .container__white:not(.container__white_2) {
+                    display: none;
+                }
+            }
+
+            .content[data-question="2"] {
+                .container__white_3 {
+                    display: flex;
+                }
+                .container__white:not(.container__white_3) {
+                    display: none;
+                }
+            }
+            .content[data-question="3"] {
+                .container__white_4 {
+                    display: flex;
+                }
+                .container__white:not(.container__white_4) {
+                    display: none;
+                }
+            }
+            .content[data-question="4"] {
+                .container__white_5 {
+                    display: flex;
+                }
+                .container__white:not(.container__white_5) {
+                    display: none;
+                }
+            }
+
+            .test_desktop {
+                display: none !important;
+            }
+
+            .protection {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                overflow: hidden;
+
+                width: 100%;
+                height: auto;
+
+                margin-bottom: get-vw(18px, 320);
+                padding-bottom: get-vw(30px, 320);
+                .protection__container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // position: relative;
+                    width: get-vw(290px, 320);
+
+                    border-radius: get-vw(24px, 320);
+                    z-index: 1;
+                    .container__items {
+                        width: 100%;
+                        height: auto;
+
+                        justify-content: center;
+                        align-items: center;
+                        .items__bloc {
+                            background: #ff837c;
+                            border: get-vw(2px, 320) solid #0e55c8;
+                            border-radius: get-vw(24px, 320);
+
+                            .items__details {
+                                width: get-vw(290px, 320);
+                                // margin-left: get-vw(15px, 320);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                .details__title {
+                                    font-family: "IBM Plex Sans", sans-serif;
+                                    font-size: get-vw(28px, 320);
+                                    line-height: 1.1;
+
+                                    color: #efefef;
+                                    margin-left: get-vw(12px, 320);
+
+                                    margin-top: get-vw(43px, 320);
+                                    margin-bottom: get-vw(13px, 320);
+
+                                    span {
+                                        font-style: italic;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .item_mobile {
+                                    // width: get-vw(276px, 1440);
+                                    height: auto;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .details__info {
+                                    // padding-left: get-vw(20px, 320);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+
+                                    .details__text {
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        line-height: 1.4;
+                                        color: #efefef;
+                                        font-size: get-vw(18px, 320);
+                                        padding-left: get-vw(12px, 320);
+                                        padding-right: get-vw(12px, 320);
+                                        margin-bottom: get-vw(23px, 320);
+                                    }
+
+                                    .details__button {
+                                        font-family: "IBM Plex Sans", sans-serif;
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        font-size: get-vw(20px, 320);
+                                        line-height: 1.1;
+                                        text-align: center;
+                                        background: #3f7de2;
+                                        color: #ffffff;
+                                        border-radius: get-vw(30px, 320);
+                                        border: none;
+                                        cursor: pointer;
+                                        padding: get-vw(10px, 320) get-vw(81px, 320) get-vw(10px, 320) get-vw(81px, 320);
+                                        margin-bottom: get-vw(50px, 320);
+                                        transition: all 0.4s;
+                                        &:hover {
+                                            background: #3f7de2;
+                                        }
+                                    }
+                                }
+                            }
+                            .details__images {
+                                width: get-vw(276px, 320);
+                                margin-top: get-vw(1px, 320);
+                                animation: move 5s infinite linear;
+
+                                @keyframes move {
+                                    to {
+                                        transform: translate3d(4px, 2px, 2px);
+                                    }
+                                    50% {
+                                        transform: translate3d(-3px, -2px, -1px);
+                                    }
+                                    from {
+                                        transform: translate3d(4px, 2px, 2px);
+                                    }
+                                }
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .item_desktop {
+                    display: none !important;
+                }
+            }
+        }
+        .star2 {
+            margin-top: get-vw(12px, 320);
+            margin-left: get-vw(18px, 320);
+        }
+        .star3 {
+            margin-top: get-vw(12px, 320);
+            margin-left: get-vw(18px, 320);
+        }
+        .star4 {
+            margin-top: get-vw(12px, 320);
+            margin-left: get-vw(18px, 320);
+        }
+        .star5 {
+            margin-top: get-vw(12px, 320);
+            margin-left: get-vw(18px, 320);
+        }
+    }
+}
